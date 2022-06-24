@@ -71,19 +71,21 @@ public class mergeSorting {
                 arr[index++] = right[rr];
             }
             }
+
+        public static void printArray(int [] array) {
+            for (int i = 0; i < array.length; i++ ){
+                System.out.printf("%d ", array[i]);
+            }
+        }
         public static void main(String [] args) {
             int n = reader();
             int[] arr = createArray(n);
             System.out.println("Исходный массив:");
-            for (int i = 0; i < arr.length; i++ ){
-                System.out.printf("%d ", arr[i]);
-            }
+            printArray(arr);
             System.out.println();
             System.out.println("Отсортированный массив:");
             mergeSort(arr);
-            for (int i = 0; i < arr.length; i++) {
-                System.out.printf("%d ", arr[i]);
-            }
+            printArray(arr);
         }
         } 
         
